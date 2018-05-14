@@ -1,0 +1,11 @@
+CREATE TABLE `kulina`.`user_review` (
+  `id` INT NOT NULL AUTO_INCREMENT ,
+  `order_id` INT NOT NULL ,
+  `product_id` INT NOT NULL ,
+  `user_id` INT NOT NULL ,
+  `rating` FLOAT NOT NULL ,
+  `review` VARCHAR(500) NOT NULL ,
+  `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ,
+  `updated_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP ,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
